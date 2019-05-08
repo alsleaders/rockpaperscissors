@@ -9,23 +9,27 @@ html {
 body {
   margin: 5;
   max-height: 900px;
-  border: coral 2rem double;
-  background-color: mediumslateblue;
+  border: royalblue 2rem double;
+  background-color: slategray;
 }
 
 .set-of-buttons {
   display: flex;
+  justify-content: center;
+  align-content: space-around;
   margin: 5% 20%;
+  padding: 0;
 }
 
 li {
   flex-direction: row;
+  align-content: space-around;
   list-style: none;
   font-weight: bolder;
 }
 
 button {
-  background-color: #4caf50; /* Green */
+  background-color: darkseagreen;
   border: none;
   color: whitesmoke;
   padding: 15px 32px;
