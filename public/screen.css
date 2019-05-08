@@ -7,11 +7,31 @@ html {
 }
 
 body {
-  margin: 0;
-  min-height: 100%;
+  margin: 5;
+  max-height: 900px;
+  border: coral 2rem double;
+  background-color: mediumslateblue;
+}
+
+.set-of-buttons {
+  display: flex;
+  margin: 5% 20%;
 }
 
 li {
+  flex-direction: row;
   list-style: none;
   font-weight: bolder;
+}
+
+button {
+  background-color: #4caf50; /* Green */
+  border: none;
+  color: whitesmoke;
+  padding: 15px 32px;
+  margin: 1rem;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 25px;
 }
