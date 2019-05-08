@@ -1,7 +1,7 @@
 let player2 = ['rock', 'paper', 'scissors', 'lizard', 'spock']
 
 const main = () => {
-  // gen a random from array
+  console.log('main loaded')
   let opponent = player2[Math.floor(Math.random() * player2.length)]
   console.log('the computer genned ' + opponent)
 }
