@@ -4,20 +4,33 @@
 
 html {
   height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 body {
   margin: 5;
-  max-height: 900px;
-  border: royalblue 2rem double;
-  background-color: slategray;
+  background: black;
+  color: aliceblue;
 }
 
+.center-spock {
+  display: flex;
+  justify-content: center;
+  background: no-repeat url('./Spock\ Cool.jpg');
+  min-height: 900px;
+}
+
+.result-under-buttons {
+  display: flex;
+  justify-content: center;
+}
 .set-of-buttons {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
   align-content: space-around;
-  margin: 5% 20%;
+  margin: 5% 15%;
   padding: 0;
 }
 
@@ -29,7 +42,7 @@ li {
 }
 
 button {
-  background-color: darkseagreen;
+  background-color: rgb(53, 70, 218);
   border: none;
   color: whitesmoke;
   padding: 15px 32px;

@@ -1,8 +1,8 @@
-let player2 = ['rock', 'paper', 'scissors', 'lizard', 'spock']
-
+let player2 = ['rock', 'paper', 'scissors', 'lizard', 'Spock']
+let opponent = player2[Math.floor(Math.random() * player2.length)]
 const main = () => {
   console.log('main loaded')
-  let opponent = player2[Math.floor(Math.random() * player2.length)]
+
   console.log('the computer genned ' + opponent)
 }
 
@@ -13,18 +13,20 @@ const compareRock = () => {
   } else if (opponent === 'rock') {
     document.querySelector('.result').textContent = 'Tie. Play again.'
   } else {
-    document.querySelector('.result').textContent = 'They beat your rock'
+    document.querySelector('.result').textContent =
+      'They beat your rock with ' + opponent
   }
 }
 
 const comparePaper = () => {
   console.log('paper')
-  if (opponent === 'rock' || opponent === 'spock') {
+  if (opponent === 'rock' || opponent === 'Spock') {
     document.querySelector('.result').textContent = 'You won with paper'
   } else if (opponent === 'paper') {
     document.querySelector('.result').textContent = 'Tie. Play again.'
   } else {
-    document.querySelector('.result').textContent = 'They beat your paper'
+    document.querySelector('.result').textContent =
+      'They beat your paper with ' + opponent
   }
 }
 
@@ -35,29 +37,32 @@ const compareScissors = () => {
   } else if (opponent === 'scissors') {
     document.querySelector('.result').textContent = 'Tie. Play again.'
   } else {
-    document.querySelector('.result').textContent = 'They beat your scissors'
+    document.querySelector('.result').textContent =
+      'They beat your scissors with ' + opponent
   }
 }
 
 const compareLizard = () => {
   console.log('lizard')
-  if (opponent === 'spock' || opponent === 'paper') {
+  if (opponent === 'Spock' || opponent === 'paper') {
     document.querySelector('.result').textContent = 'You won with lizard'
   } else if (opponent === 'lizard') {
     document.querySelector('.result').textContent = 'Tie. Play again.'
   } else {
-    document.querySelector('.result').textContent = 'They beat your lizard'
+    document.querySelector('.result').textContent =
+      'They beat your lizard with ' + opponent
   }
 }
 
 const compareSpock = () => {
-  console.log('spock')
+  console.log('Spock')
   if (opponent === 'scissors' || opponent === 'rock') {
     document.querySelector('.result').textContent = 'You won with Spock'
-  } else if (opponent === 'spock') {
+  } else if (opponent === 'Spock') {
     document.querySelector('.result').textContent = 'Tie. Play again.'
   } else {
-    document.querySelector('.result').textContent = 'They beat your Spock'
+    document.querySelector('.result').textContent =
+      'They beat your Spock with ' + opponent
   }
 }
 
